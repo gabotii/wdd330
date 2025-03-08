@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleep Outside | Backpacks</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="./js/renderHeaderFooter.js" defer></script>
+  <script type="module" src="./js/cartCount.js"></script>
+  <script type="module" src="./js/backpacks.js" defer></script>
+
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <header class="divider"></header>
+  <main class="divider">
+    <section class="products">
+      <h2>Backpacks</h2>
+      <p>Explore our <a href="index.html">product categories</a> to find the perfect gear for your outdoor adventures.
+      </p>
+
+      <!-- Sort Dropdown -->
+      <div class="sort-container">
+        <label for="sort-options">Sort by:</label>
+        <select id="sort-options">
+          <option value="name-asc">Name (A-Z)</option>
+          <option value="name-desc">Name (Z-A)</option>
+          <option value="price-asc">Price (Low to High)</option>
+          <option value="price-desc">Price (High to Low)</option>
+        </select>
+       
+        <span id="per-page-info"></span>
+      </div>
+
+      <ul class="product-list"></ul>
+    </section>
+  </main>
+
+  <!-- Quick View Modal -->
+<!-- Quick View Modal -->
+<div id="quick-view-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <div id="quick-view-content"></div>
+  </div>
+</div>
+
+
+  <footer></footer>
+
+</body>
+
+</html>

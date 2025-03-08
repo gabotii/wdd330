@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Categories</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="./js/renderHeaderFooter.js" defer></script>
+    <script type="module" src="./js/cartCount.js"></script>
+    <script type="module" src="./js/search.js" defer></script>
+
+    <style>
+            .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4rem; 
+            padding: 2rem 0;
+            list-style: none; 
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+            }
+
+            .category-item {
+            text-align: center;
+            width: 120px; 
+            }
+
+            .category-item img {
+            width: 80px; 
+            height: 80px; 
+            transition: transform 0.3s ease;
+            }
+
+            .category-item:hover img {
+            transform: scale(1.1); 
+            }
+
+            .category-item h3 {
+            margin-top: 0.8rem; 
+            font-size: 1rem;
+            }
+
+    @media (max-width: 768px) {
+        .category-list {
+        flex-direction: row; 
+        justify-content: space-around;
+        gap: 1.5rem; 
+        }
+
+        .category-item {
+        width: 70px;
+        }
+
+        .category-item img {
+        width: 50px; 
+        height: 50px;
+        }
+
+        .category-item h3 {
+        font-size: 0.8rem;
+        }
+    }
+      </style>
+
+  </head>
+  <body>
+    <header class="divider"></header>
+
+    <main class="divider">
+      <div class="hero">
+        <img
+          src="/images/banner-sm.jpg"
+          srcset="images/banner-sm.jpg 500w, images/banner.jpg"
+          alt="image of a high mountain lake"
+        />
+        <div class="logo logo--square">
+          <img src="/images/noun_Tent_2517.svg" alt="tent image for logo">
+          <div>Sleep<span class="highlight">Outside</span></div>
+        </div>
+      </div>
+
+      <section class="mission">
+        <p>We spend too much time these days indoors...sitting usually.</p>
+        <p>No wonder we are a mess!</p>
+        <p>
+          What we really need is to get outside...in fact SLEEP outside. Our
+          mission is to provide you with everything you need to do this
+          comfortably at an affordable price.
+        </p>
+      </section>
+
+      <section class="products">
+        <ul class="category-list">
+          <li class="category-item">
+            <a href="tents.html">
+              <img src="images/tents.png" alt="Tents category">
+              <h3>Tents</h3>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="backpacks.html">
+              <img src="images/backpacks.png" alt="Backpacks category">
+              <h3>Backpacks</h3>
+            </a>
+          </li>
+          <li class="category-item">
+            <a href="sleeping-bags.html">
+              <img src="images/sleepingbags.png" alt="Sleeping Bags category">
+              <h3>Sleeping Bags</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
