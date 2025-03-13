@@ -1,0 +1,1 @@
+const o={}.VITE_SERVER_URL;function s(t){if(t.ok)return t.json();throw new Error("Bad Response")}async function e(t){const n=await fetch(o+`products/search/${t}`);return(await s(n)).Result}async function c(t){const n=await fetch(o+`product/${t}`);return(await s(n)).Result}export{c as f,e as g};
